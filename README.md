@@ -169,6 +169,14 @@ a module of the name that they've passed in. If we succeed, we print the
 module's `exports` to console (and we colorize it!); if we fail, we tell
 the user what went wrong and exit with an error. Try it!
 
+(Confused by that stuff in back ticks? These are called "[template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)."
+They work essentially like string interpolation in Ruby
+(`"See? It's #{interpolated}"`), just with a slightly different syntax. They're
+a new feature in [ECMAScript 6](https://en.wikipedia.org/wiki/ECMAScript#6th_Edition)
+that Node.js just made available by default. No more
+`"concatenating " + variables + " into strings!"`
+
+
 ``` bash
 # print the `fs` module's properties!
 node lib fs
@@ -234,13 +242,6 @@ We don't have to do any argument trimming here, and even though we renamed
 the function in `interface.js`, we don't have to rename anything here since
 the function is the `exports` object of the `interfaces.js` module. Code
 separation FTW!
-
-(Confused by that stuff in back ticks? These are called "[template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)."
-They work essentially like string interpolation in Ruby
-(`"See? It's #{interpolated}"`), just with a slightly different syntax. They're
-a new feature in [ECMAScript 6](https://en.wikipedia.org/wiki/ECMAScript#6th_Edition)
-that Node.js just made available by default. No more
-`"concatenating " + variables + " into strings!"`
 
 ## Review
 
