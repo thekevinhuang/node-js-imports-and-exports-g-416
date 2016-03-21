@@ -172,9 +172,10 @@ the user what went wrong and exit with an error. Try it!
 (Confused by that stuff in back ticks? These are called "[template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)."
 They work essentially like string interpolation in Ruby
 (`"See? It's #{interpolated}"`), just with a slightly different syntax. They're
-a new feature in [ECMAScript 6](https://en.wikipedia.org/wiki/ECMAScript#6th_Edition)
+a new feature in
+[ECMAScript 6](https://en.wikipedia.org/wiki/ECMAScript#6th_Edition)
 that Node.js just made available by default. No more
-`"concatenating " + variables + " into strings!"`
+`"concatenating " + variables + " into strings!"`)
 
 
 ``` bash
@@ -205,7 +206,7 @@ be doing that where we're handling _all_ of the user arguments, in
 ``` javascript
 // lib/interface.js
 
-module.exports = function getUserArguments() {
+module.exports = function getUserArgument() {
   const userArgs = process.argv.slice(2);
 
   if (userArgs.length > 1) {
